@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  registry:
+    image: registry:2
+    ports:
+      - "5001:5000"
+
+  registry-ui:
+    image: joxit/docker-registry-ui
+    environment:
+      - REGISTRY_TITLE=Student Registry
+      - REGISTRY_URL=http://registry:5000
+    ports:
+      - "5002:80"
+    depends_on:
+      - registry

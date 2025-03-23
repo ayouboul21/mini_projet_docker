@@ -1,6 +1,6 @@
 FROM python:3.8-buster
 
-LABEL maintainer="Votre Nom <votre.email@example.com>"
+LABEL maintainer="Oulahraoui Ayoub aoulahra@gmail.com"
 
 WORKDIR /
 
